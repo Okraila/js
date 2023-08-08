@@ -179,12 +179,128 @@
 //     }
 // }
 
-let i = 0;
+// let i = 0;
 
 // for (let i = 0; i <= 100; i+= 3) {
 //     console.log(i);
 // }
 
-for (let i = 0; i <= 50; i += 1) {
-    console.log(i);
+// for (let i = 0; i <= 50; i += 1) {
+//     console.log(i);
+// }
+
+// МАСИВИ
+
+// const arr = ["Тарас", "Антон", "Максим", "Тарас", "Антон", "Максим", "Тарас", "Антон", "Максим",];
+// console.log(arr);
+// // console.log(arr.length);
+// arr[1] = "Olga";
+// const lastIndex = arr.length - 1;
+// console.log(lastIndex);
+// // console.log(arr);
+
+// for (let i = 0; i <arr.length; i++) {
+//     console.log(arr[i]);
+// }
+
+// for (const i of arr) {
+//     console.log(i)
+// }
+
+// 
+
+// let a = 5;
+// let b = a;
+// console.log(a);
+// console.log(b);
+
+// a = 10;
+
+// console.log(a);
+// console.log(b);
+
+// const message = ["Javascript", "це", "цікаво"]
+
+// console.log(message.includes("це"));
+
+// const numbers = [];
+// console.log(numbers);
+// numbers.push(1);
+// console.log(numbers);
+// numbers.push("push");
+// console.log(numbers);
+// numbers.push(3,4);
+// console.log(numbers);
+// numbers.pop();
+// console.log(numbers);
+// numbers.pop();
+// console.log(numbers);
+
+// const clients = ["Тарас", "Антон", "Максим", "Olga", "Polina", "Poly"]
+
+// const newClients = clients.silce(1, 4);
+// console.log(clients);
+// console.log(newClients);
+
+// Повертає новий масив, що має копію попереднього масива, не змінюючи його.
+
+// const scores = [1, 2, 3, 4, 5];
+// const deletedScores = scores.splice(0, 3);
+// console.log(scores);
+// console.log(deletedScores);
+
+// const colors = ["red", "green", "blue"];
+// colors.splice(2, 0, "yellow", "sdsdsd");
+// console.log(colors);
+
+// // concat
+
+// const oldArr = [1, 2, 3];
+// const newArr = [4, 5, 6];
+
+// const arr = oldArr.concat(newArr);
+// console.log(arr);
+
+// function sayHello() {
+//     console.log("Hello, world!")
+// }
+// sayHello();
+
+// // function calc(x, y, i) {
+// //     console.log(`Результат множення x y i = ${x * y * i}`)
+// // }
+// // calc(2, 3, 4);
+
+// const calc = function (x, y, i) {
+//     console.log(`Результат множення x y i = ${x * y * i}`)
+// };
+// calc(2, 3, 4)
+
+// function newCalc (x, y, i) {
+//     console.log("Код до ретьорн проводиться звичайним чином");
+//     return x * y * i;
+//     console.log("Цей лог ніколи не виконається");
+// }
+
+const book = {
+    title:'Obvivion',
+    author:'Bernard D;',
+    isPublic:true,
+    pages:5000,
+    stats: {
+        rating: 9.9,
+        popular: 2.2,
+    }
 }
+
+console.log(book.title)
+console.log(book.stats)
+
+function age(x) {
+    if (x => 18) {
+     console.log("Ви неповнолітні");
+} else {
+    console.log("Ви повнолітні");
+    }
+}
+age(10);
