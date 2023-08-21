@@ -282,25 +282,92 @@
 //     console.log("Цей лог ніколи не виконається");
 // }
 
-const book = {
-    title:'Obvivion',
-    author:'Bernard D;',
-    isPublic:true,
-    pages:5000,
-    stats: {
-        rating: 9.9,
-        popular: 2.2,
-    }
-}
+// const book = {
+//     title:'Obvivion',
+//     author:'Bernard D;',
+//     isPublic:true,
+//     pages:5000,
+//     stats: {
+//         rating: 9.9,
+//         popular: 2.2,
+//     }
+// }
 
-console.log(book.title)
-console.log(book.stats)
+// console.log(book.title)
+// console.log(book.stats)
 
-function age(x) {
-    if (x => 18) {
-     console.log("Ви неповнолітні");
-} else {
-    console.log("Ви повнолітні");
-    }
-}
-age(10);
+// function age(x) {
+//     if (x => 18) {
+//      console.log("Ви неповнолітні");
+// } else {
+//     console.log("Ви повнолітні");
+//     }
+// }
+// age(10);
+// function foo(name) {
+//     console.log(`Ласкаво Просимо ${name}`)
+// }
+
+// foo("Іван");
+
+// function highFoo(name, callback) {
+//     console.log(`Реєструємо Гостя ${name}`)
+//     callback(name);
+// }
+
+// highFoo("Georgiy", foo);
+
+// highFoo("Bernard", function notify(name) {
+//     console.log(`Шановний ${name}, ваш номер буде готовий за 30 хв!`)
+// })
+
+// cars.forEach((element) => {
+//     // тіло функції
+// })
+
+// cars.forEach(function callback(element, index) {
+//     // тіло функції
+// })
+
+// const number = [2, 3, 4, 5, 6, 7];
+
+// for (let i = 0; i < number.length; i++) {
+//     console.log(`Індекс ${i}, значення ${number[i]}`)
+// }
+
+// number.forEach(function (number, index) {
+//     console.log(`forEach Індекс ${index}, значення ${number}`)
+// })
+
+// const names = ["Oleksandr", "Ivan", "Georgiy"];
+
+// names.forEach (function (names) {
+//     console.log(`Привіт, мене звати ${names}`)
+// });
+
+// function classic () {
+//     return a * b * c;
+// }
+
+// const arrow = (a + b + c) => {
+//     return a * b * c;
+// }
+
+// const add = (a) => {
+//     return a + 5;
+// }
+
+// const logMessage = (item, index) => {
+//     console.log(`forEach Індекс ${index}, значення ${item}`)
+// }
+
+// number.forEach(logMessage);
+
+Array.map((item) => {});
+
+const planets = ["Земля", "Марс", "Меркурій", "Венера"];
+const planetsUpp = planets.map((item) => item.toUpperCase());
+console.log(planetsUpp);
+console.log(planets);
+
+item =>
