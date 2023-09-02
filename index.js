@@ -157,7 +157,7 @@
 
 // Цикли!
 //  while(умова){
-    // код, тіло циклу
+// код, тіло циклу
 // }
 
 // do {
@@ -363,11 +363,104 @@
 
 // number.forEach(logMessage);
 
-Array.map((item) => {});
+// Array.map((item) => {});
 
-const planets = ["Земля", "Марс", "Меркурій", "Венера"];
-const planetsUpp = planets.map((item) => item.toUpperCase());
-console.log(planetsUpp);
-console.log(planets);
+// const planets = ["Земля", "Марс", "Меркурій", "Венера"];
+// const planetsUpp = planets.map((item) => item.toUpperCase());
+// console.log(planetsUpp);
+// console.log(planets);
 
-item =>
+// const myAgeLastNumber = 3;
+
+// const myLetterNumber = 9; 
+
+// function myNumbersAdded (myAgeLastNumber, myLetterNumber) {
+//     console.log(myAgeLastNumber + myLetterNumber);
+// }
+
+// myNumbersAdded(3, 9);
+
+// const number1 = 51;
+// const number2 = 49;
+
+// function plus (number1, number2) {
+//     console.log(number1 + number2)
+// }
+
+// function minus (number1, number2) {
+//     console.log(number1 - number2)
+// }
+
+// function multiplication (number1, number2) {
+//     console.log(number1 * number2)
+// }
+
+// function division (number1, number2) {
+//     console.log(number1 / number2)
+// }
+
+
+// plus(number1, number2);
+
+// minus(number1, number2);
+
+// multiplication(number1, number2);
+
+// division(number1, number2);
+
+// const students = [
+//     { name: "Taras", age: 14, height: 1.5 },
+//     { name: "Jack", age: 13, height: 1.32 },
+//     { name: "Olga", age: 12, height: 1.42 },
+//     { name: "Ivan", age: 11, height: 1.21 },
+//   ];
+
+// students.forEach (function calc({name, age, height}){
+//     console.log(`Мене звати ${name} мені ${age} років, маю висоту` ${height} * 100 `см`)
+// })
+
+
+const fish = [
+    {
+        id: 1,
+        name: "Fugu",
+        weight: 10
+    },
+    {
+        id: 2,
+        name: "Pike",
+        weight: 5
+    },
+    {
+        id: 3,
+        name: "Bass",
+        weight: 3
+    },
+    {
+        id: 4,
+        name: "Dorado",
+        weight: 20
+    }
+]
+
+const fishWeight = fish.map((item) => {
+    const gram = item.weight * 1000;
+    return {
+        ...item,
+        weight: gram,
+    };
+})
+
+console.log(fishWeight);
+
+fish.forEach(({name, weight})=>{
+    console.log(`я сьогодні їздив на рибалку, і зловив рибу ${name}, вагою ${weight}`)
+})
+
+fishWeight.forEach(({name, weight})=>{
+    console.log(`я сьогодні їздив на рибалку, і зловив рибу ${name}, вагою ${weight}`)
+})
+
+
+
+
